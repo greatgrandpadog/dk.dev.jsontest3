@@ -161,15 +161,13 @@ function ProcessSelectedState(selection_text)
 }
 
 
-window.addEvent('domready', function() {
-	$$('.listcombo').each(function(ulist){
-		new ListCombo(ulist, ProcessSelectedState, '#8C796B', '#786557');
-	});
-});
-
 window.addEvent('domready', function()
 {
-    $('hlogo').addEvent('click', ToggleHeaderInfo);
+    $$('.listcombo').each(function(ulist){
+            new ListCombo(ulist, ProcessSelectedState, '#8C796B', '#786557');
+    });
+        
+    $('htaglink').addEvent('click', ToggleHeaderInfo);            
 });
-    
+
 

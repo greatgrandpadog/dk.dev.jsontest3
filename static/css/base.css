@@ -26,7 +26,7 @@ body
 
 #hbup
 {
-    height: 130px;
+    height: 160px;
     position: absolute;
     background-color:#C8B5A7;
     top:-300px;
@@ -45,6 +45,9 @@ body
     margin-right: 20px;
     margin-top: 0px;
     margin-bottom: 50px;
+    /*font-family:"Times New Roman", Times, serif;*/
+    font-family: "Trebuchet MS", sans-serif;
+    font-weight: lighter;
 }
 
 #hbuptitle
@@ -52,6 +55,7 @@ body
     color:#000000;
     font: 24px/38px arial, sans-serif;
     font-weight: bold;
+    margin-bottom: 20px;
 }
 
 #hbup a:link
@@ -83,7 +87,7 @@ body
 #hbr
 {
     right: 0;
-    padding-right: 10px; 
+    padding-right: 0px; 
 }
 
 #hbbgl
@@ -123,9 +127,17 @@ body
 {
     float:right;
     margin-right: 20;
-    cursor: pointer;
 }
 
+#htaglink
+{
+    float:right;
+    background: url("/static/images/tag3.png") no-repeat scroll right;
+    width: 40px;
+    min-height: 40px;
+    min-width: 40px;
+    cursor: pointer;
+}
 
 #titlebar
 {

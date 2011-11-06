@@ -1,0 +1,37 @@
+## File: templates/defaultmako.html
+
+<%inherit file="basemako.html" />
+
+<%def name="title()">
+    Counties in State
+</%def>
+
+<%def name="css()">
+    <link rel="stylesheet" href="/static/css/default.css" type="text/css" media="screen" charset="utf-8"/>
+</%def>
+
+<%def name="body()">
+    <center>
+        <div id="content">          
+            <div id= "selstate">
+                <div id = "stlbl">State:</div>
+                <div id = "stsel">
+                    <ul id="choices-" class="ListCombo">
+                        <li id="0" class="ListComboSelected">Not Selected</li>
+                        <li id="1" class="">Kansas</li>
+                        <li id="2" class="">Missouri</li>
+                    </ul>  
+                </div>  
+            </div>            
+            <br id="selbrk" clear="all">
+            <div id="showcounties" >
+                <div id = "ctylbl">Counties</div>
+                <div id="CountyData">
+                </div>
+            </div>
+        </div>
+    </center>
+  </%def>
+
+
+

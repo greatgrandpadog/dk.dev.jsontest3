@@ -1,0 +1,45 @@
+## File: templates/basemako.html
+
+<html>
+<head>
+<title>Title - ${next.title()} </title>
+<!-- <script src="/static/js/jquery-1.6.4.js"></script> -->
+<script src="/static/js/mootools-core-1.4.1-full-compat.js"></script>
+<script src="/static/js/mootools-more-1.4.0.1.js"></script>
+<script src="/static/js/listcombo.js"></script>
+<script src="/static/js/appbase.js"></script>
+<link rel="stylesheet" href="/static/css/base.css" type="text/css" media="screen" charset="utf-8"/>
+${next.css()}
+</head>
+<body>
+    <div id = "headerbar">
+        <div id = "hbup">
+            <div id = "hbupwrap">
+                <div id = "hbuptitle">Counties in State</div>
+                This application displays a manually-sortable list of counties in two different states.
+                It makes use of Python (v2.7), web.py (v3.2), SqlAlchemy(v0.6.8), Mako (v0.3.6), and Mootools (v1.4.0.1).
+                The application was developed with Apache serving the content via mod_wsgi.
+                Source code is available as a compressed file (<a href="/static/src/jsontest3.src.tar.gz">here</a>), or from a github repository (<a href="/static/src/stuff.gz">here</a>).
+            </div>
+        </div>
+        <div id = "hbl" >
+        </div>
+        <div id = "hbr" >
+            <div id = "hlogo">
+                dev
+            </div>
+        </div>
+        <div id = "hbbgl"></div>
+        <div id = "hbbgr"></div>
+ 
+    </div>
+    <div id = "contentbase">
+        <div id = "titlebar">
+            ${next.title()}
+        </div>
+        <div id="bodycontent">
+            ${next.body()}
+        </div>
+    </dib>
+</body>
+</html>

@@ -1,0 +1,135 @@
+
+#content
+{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    font: 24px/38px arial,sans-serif;
+}
+
+#selstateold
+{
+    margin: 0;
+    width: 800px;
+    position:relative;
+}
+
+#selstate
+{
+    margin: 0;
+    width: 350px;
+    position:relative;
+}
+
+#stlbl, #stlblold
+{
+    position:absolute;
+    top:0px;
+    left:0;
+    font-size: 32px;
+    font-weight: bold;
+    height: 40px;
+    text-align: left;
+}
+
+#stselold
+{
+    position:absolute;
+    top:0px;
+    right:33px;
+    height: 40px;
+}
+
+#stsel
+{
+    position:absolute;
+    right:0px;
+    height: 40px;
+}
+
+#showcounties
+{
+    border-radius: 15px;
+    width:900px;
+    padding: 10px 30px 30px 30px;
+    margin: 70 30 30 30px;
+    position: relative;
+    font: 24px/38px arial,sans-serif;
+    opacity: 0;
+}
+
+#ctylbl
+{
+    width: 500px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin: auto 0;
+}
+
+ul#CountyList {
+  width: 700px;
+  list-style-type: none;
+  padding: 0;
+}
+
+#CountyList li
+{
+  cursor: move;
+  padding: 0;
+  margin: 4 4 4 4px;
+  height: 40px;
+  background: #F9F9F9;
+  border-radius: 5px;
+}
+
+.ListComboLabel
+{
+    background: url("/static/images/arrDown_2.gif") no-repeat scroll right 17px #8C796B;
+    height: 40px;
+    width: 150px;
+    color: #EEEEEE;
+    position:absolute;
+    right:0;
+    padding: 0 40px 0 17px;
+    border-radius: 6px;
+    cursor: pointer;
+    font: 24px/38px arial,sans-serif;
+}
+
+a.ListComboLabel:hover, a.ListComboLabel:active
+{
+    background-color: #786557;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+ul.ListCombo
+{
+    border: 0 none;
+    font: 24px/38px arial,sans-serif; 
+    list-style: none outside none;
+    margin: 40px 0 0;
+    padding: 0;
+    position: absolute;
+    z-index: 500;
+    right:0;
+    opacity:0;
+    display: none;
+}
+
+ul.ListCombo li {  
+    background: none repeat scroll right 0 #8C796B;
+    color: #FFFFFF;
+    cursor: pointer;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 40px 0 17px;
+    width: 150px;
+}
+
+ul.ListCombo li.choice-selected {
+    background-color:#786557;
+    color: #FFFFFF;
+}
